@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmFlow - Movie Ranking</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+
+    <header>
+        <h1>FilmFlow</h1>
+    </header>
+
+    <nav>
+        <a href="#" id="home-link">Home</a>
+
+        
+        <div class="dropdown">
+            <a href="#" class="dropdown-btn">Genre</a>
+            <div class="dropdown-content">
+                <a href="#" class="genre-option" data-genre="all">All</a>
+                <a href="#" class="genre-option" data-genre="drama">Drama</a>
+                <a href="#" class="genre-option" data-genre="action">Action</a>
+                <a href="#" class="genre-option" data-genre="comedy">Comedy</a>
+                <!-- Add more genre options here -->
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown-btn">Year</a>
+            <div class="dropdown-content">
+                <a href="#" class="year-option" data-year="all">All</a>
+                <a href="#" class="year-option" data-year="2021">2021</a>
+                <a href="#" class="year-option" data-year="2022">2022</a>
+				<a href="#" class="year-option" data-year="2023">2023</a>
+                <!-- Add more year options here -->
+            </div>
+    </nav>
+
+     <main>
+        <section>
+            <h2>Movies</h2>
+            <ul>
+                <li class="movie-list-item" data-genre="drama" data-year="2021">
+                    <div class="movie-card">
+                        <img src="the-green-knight.jpg" alt="The Green Knight Poster" width="150">
+                        <div class="movie-details">
+                            <h3>The Green Knight</h3>
+                            <p>Year: 2021</p>
+                            <p>Genre: Drama</p>
+                            <p>Starring: Dev Patel, Alicia Vikander</p>
+                            <div class="rating" data-rating="0">
+                                <span>&#9733;</span> <!-- Star symbol -->
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-list-item" data-genre="action" data-year="2021">
+                    <div class="movie-card">
+                        <img src="a-quiet-place-part-ii.jpg" alt="A Quiet Place Part II Poster" width="150">
+                        <div class="movie-details">
+                            <h3>A Quiet Place Part II</h3>
+                            <p>Year: 2021</p>
+                            <p>Genre: Horror / Thriller</p>
+                            <p>Starring: Emily Blunt, Cillian Murphy</p>
+                            <div class="rating" data-rating="0">
+                                <span>&#9733;</span> <!-- Star symbol -->
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Add more movie entries here -->
+                <li class="movie-list-item" data-genre="action" data-year="2021">
+                    <div class="movie-card">
+                        <img src="venom.jpg" alt="Venom Poster" width="150">
+                        <div class="movie-details">
+                            <h3>Venom: Let There Be Carnage</h3>
+                            <p>Year: 2021</p>
+                            <p>Genre: Action / Sci-Fi</p>
+                            <p>Starring: Tom Hardy, Michelle Williams</p>
+                            <div class="rating" data-rating="0">
+                                <span>&#9733;</span> <!-- Star symbol -->
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="movie-list-item" data-genre="action" data-year="2021">
+                    <div class="movie-card">
+                        <img src="spiderman-no-way-home.jpg" alt="Spider-Man: No Way Home Poster" width="150">
+                        <div class="movie-details">
+                            <h3>Spider-Man: No Way Home</h3>
+                            <p>Year: 2021</p>
+                            <p>Genre: Action / Adventure</p>
+                            <p>Starring: Tom Holland, Zendaya</p>
+                            <div class="rating" data-rating="0">
+                                <span>&#9733;</span> <!-- Star symbol -->
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				<li class="movie-list-item" data-genre="comedy" data-year="2021">
+                    <div class="movie-card">
+                        <img src="free-guy.jpg" alt="Free Guy Poster" width="150">
+                        <div class="movie-details">
+                            <h3>Free Guy</h3>
+                            <p>Year: 2021</p>
+                            <p>Genre: Action / Comedy</p>
+                            <p>Starring: Ryan Reynolds, Jodie Comer</p>
+                            <div class="rating" data-rating="0">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				 <li class="movie-list-item" data-genre="comedy" data-year="2021">
+                    <div class="movie-card">
+                        <img src="the-suicide-squad.jpg" alt="The Suicide Squad Poster" width="150">
+                        <div class="movie-details">
+                            <h3>The Suicide Squad</h3>
+                            <p>Year: 2021</p>
+                            <p>Genre: Action / Comedy</p>
+                            <p>Starring: Margot Robbie, Idris Elba</p>
+                            <div class="rating" data-rating="0">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				<li class="movie-list-item" data-genre="drama" data-year="2021">
+                    <div class="movie-card">
+                        <img src="the-black-phone.jpg" alt="The Black Phone Poster" width="150">
+                        <div class="movie-details">
+                            <h3>The Black Phone</h3>
+                            <p>Year: 2021</p>
+                            <p>Genre: Horror / Drama</p>
+                            <p>Starring: Ethan Hawke, Jeremy Davies</p>
+                            <div class="rating" data-rating="0">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				<li class="movie-list-item" data-genre="action" data-year="2021">
+                    <div class="movie-card">
+                        <img src="f9.jpg" alt="F9 Poster" width="150">
+                        <div class="movie-details">
+                            <h3>F9</h3>
+                            <p>Year: 2021</p>
+                            <p>Genre: Action / Adventure</p>
+                            <p>Starring: Vin Diesel, Michelle Rodriguez</p>
+                            <div class="rating" data-rating="0">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				<li class="movie-list-item" data-genre="drama" data-year="2022">
+                    <div class="movie-card">
+                        <img src="the-whale.jpg" alt="The Whale Poster" width="150">
+                        <div class="movie-details">
+                            <h3>The Whale</h3>
+                            <p>Year: 2022</p>
+                            <p>Genre: Drama</p>
+                            <p>Starring: Brendan Fraser, Samantha Morton</p>
+                            <div class="rating" data-rating="0">
+                                <span>&#9733;</span> <!-- Star symbol -->
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				 <li class="movie-list-item" data-genre="drama" data-year="2022">
+                    <div class="movie-card">
+                        <img src="dont-worry-darling.jpg" alt="Don't Worry Darling Poster" width="150">
+                        <div class="movie-details">
+                            <h3>Don't Worry Darling</h3>
+                            <p>Year: 2022</p>
+                            <p>Genre: Drama / Thriller</p>
+                            <p>Starring: Florence Pugh, Harry Styles</p>
+                            <div class="rating" data-rating="0">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				 <li class="movie-list-item" data-genre="drama" data-year="2022">
+                    <div class="movie-card">
+                        <img src="fall.jpg" alt="Fall Poster" width="150">
+                        <div class="movie-details">
+                            <h3>Fall</h3>
+                            <p>Year: 2022</p>
+                            <p>Genre: Drama</p>
+                            <p>Starring: Grace Caroline Currey, Virginia Gardner</p>
+                            <div class="rating" data-rating="0">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				<li class="movie-list-item" data-genre="comedy" data-year="2022">
+                    <div class="movie-card">
+                        <img src="senior-year.jpg" alt="Senior Year Poster" width="150">
+                        <div class="movie-details">
+                            <h3>Senior Year</h3>
+                            <p>Year: 2022</p>
+                            <p>Genre: Comedy</p>
+                            <p>Starring: Rebel Wilson, Justin Hartley</p>
+                            <div class="rating" data-rating="0">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				 <li class="movie-list-item" data-genre="drama" data-year="2022">
+                    <div class="movie-card">
+                        <img src="glass-onion.jpg" alt="Glass Onion Poster" width="150">
+                        <div class="movie-details">
+                            <h3>Glass Onion</h3>
+                            <p>Year: 2022</p>
+                            <p>Genre: Drama</p>
+                            <p>Starring: Daniel Craig, Edward Norton</p>
+                            <div class="rating" data-rating="0">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				<li class="movie-list-item" data-genre="action" data-year="2022">
+				<div class="movie-card">
+					<img src="the-grey-man.jpg" alt="The Grey Man Poster" width="150">
+					<div class="movie-details">
+						<h3>The Grey Man</h3>
+						<p>Year: 2022</p>
+						<p>Genre: Action / Thriller</p>
+						<p>Starring: Ryan Gosling, Chris Evans</p>
+						<div class="rating" data-rating="0">
+							<span>&#9733;</span> <!-- Star symbol -->
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="movie-list-item" data-genre="drama" data-year="2022">
+				<div class="movie-card">
+					<img src="the-northman.jpg" alt="The Northman Poster" width="150">
+					<div class="movie-details">
+						<h3>The Northman</h3>
+						<p>Year: 2022</p>
+						<p>Genre: Drama / Historical</p>
+						<p>Starring: Alexander Skarsgård, Nicole Kidman</p>
+						<div class="rating" data-rating="0">
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="movie-list-item" data-genre="action" data-year="2022">
+				<div class="movie-card">
+					<img src="ambulance.jpg" alt="Ambulance Poster" width="150">
+					<div class "movie-details">
+						<h3>Ambulance</h3>
+						<p>Year: 2022</p>
+						<p>Genre: Action / Crime</p>
+						<p>Starring: Jake Gyllenhaal, Yahya Abdul-Mateen II</p>
+						<div class="rating" data-rating="0">
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="movie-list-item" data-genre="action" data-year="2022">
+				<div class="movie-card">
+					<img src="the-355.jpg" alt="The 355 Poster" width="150">
+					<div class="movie-details">
+						<h3>The 355</h3>
+						<p>Year: 2022</p>
+						<p>Genre: Action / Thriller</p>
+						<p>Starring: Jessica Chastain, Penélope Cruz</p>
+						<div class="rating" data-rating="0">
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="movie-list-item" data-genre="action" data-year="2022">
+				<div class="movie-card">
+					<img src="bullet-train.jpg" alt="Bullet Train Poster" width="150">
+					<div class="movie-details">
+						<h3>Bullet Train</h3>
+						<p>Year: 2022</p>
+						<p>Genre: Action / Thriller</p>
+						<p>Starring: Brad Pitt, Joey King</p>
+						<div class="rating" data-rating="0">
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+							<span>&#9733;</span>
+						</div>
+					</div>
+				</div>
+			</li>
+		   <li class="movie-list-item" data-genre="comedy" data-year="2023">
+    <div class="movie-card">
+        <img src="barbie.jpg" alt="Barbie Poster" width="150">
+        <div class="movie-details">
+            <h3>Barbie</h3>
+            <p>Year: 2023</p>
+            <p>Genre: Comedy</p>
+            <p>Starring: Margot Robbie, Ryan Gosling</p>
+            <div class="rating" data-rating="0">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="movie-list-item" data-genre="drama" data-year="2023">
+    <div class="movie-card">
+        <img src="oppenheimer.jpg" alt="Oppenheimer Poster" width="150">
+        <div class="movie-details">
+            <h3>Oppenheimer</h3>
+            <p>Year: 2023</p>
+            <p>Genre: Drama / Biography</p>
+            <p>Starring: Cillian Murphy, Emily Blunt</p>
+            <div class="rating" data-rating="0">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="movie-list-item" data-genre="comedy" data-year="2023">
+    <div class="movie-card">
+        <img src="asteroid-city.jpg" alt="Asteroid City Poster" width="150">
+        <div class="movie-details">
+            <h3>Asteroid City</h3>
+            <p>Year: 2023</p>
+            <p>Genre: Comedy</p>
+            <p>Starring: Scarlett Johansson, Jason Schwartzman</p>
+            <div class="rating" data-rating="0">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="movie-list-item" data-genre="acton" data-year="2023">
+    <div class="movie-card">
+        <img src="the-covenant.jpg" alt="The Covenant Poster" width="150">
+        <div class="movie-details">
+            <h3>The Covenant</h3>
+            <p>Year: 2023</p>
+            <p>Genre: Action</p>
+            <p>Starring: Jake Gyllenhaal, Dar Salim</p>
+            <div class="rating" data-rating="0">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="movie-list-item" data-genre="drama" data-year="2023">
+    <div class="movie-card">
+        <img src="boston-strangler.jpg" alt="Boston Strangler Poster" width="150">
+        <div class="movie-details">
+            <h3>Boston Strangler</h3>
+            <p>Year: 2023</p>
+            <p>Genre: Crime / Drama</p>
+            <p>Starring: Keira Knightley, Carrie Coon</p>
+            <div class="rating" data-rating="0">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="movie-list-item" data-genre="comedy" data-year="2023">
+    <div class="movie-card">
+        <img src="you-people.jpg" alt="You People Poster" width="150">
+        <div class="movie-details">
+            <h3>You People</h3>
+            <p>Year: 2023</p>
+            <p>Genre: Comedy</p>
+            <p>Starring: Jonah Hill, Lauren London</p>
+            <div class="rating" data-rating="0">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="movie-list-item" data-genre="action" data-year="2023">
+    <div class="movie-card">
+        <img src="plane.jpg" alt="Plane Poster" width="150">
+        <div class="movie-details">
+            <h3>Plane</h3>
+            <p>Year: 2023</p>
+            <p>Genre: Action</p>
+            <p>Starring: Gerard Butler, Mike Colter</p>
+            <div class="rating" data-rating="0">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="movie-list-item" data-genre="action" data-year="2023">
+    <div class="movie-card">
+        <img src="mission-impossible-dead-reckoning.jpg" alt="Mission Impossible: Dead Reckoning Poster" width="150">
+        <div class="movie-details">
+            <h3>Mission Impossible: Dead Reckoning</h3>
+            <p>Year: 2023</p>
+            <p>Genre: Action / Spy</p>
+            <p>Starring: Tom Cruise, Rebecca Ferguson</p>
+            <div class="rating" data-rating="0">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="movie-list-item" data-genre="action" data-year="2023">
+    <div class="movie-card">
+        <img src="heart-of-stone.jpg" alt="Heart of Stone Poster" width="150">
+        <div class="movie-details">
+            <h3>Heart of Stone</h3>
+            <p>Year: 2023</p>
+            <p>Genre: Action / Thriller</p>
+            <p>Starring: Gal Gadot, Jamie Dornan</p>
+            <div class="rating" data-rating="0">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="movie-list-item" data-genre="comedy" data-year="2023">
+    <div class="movie-card">
+        <img src="they-cloned-tyrone.jpg" alt="They Cloned Tyrone Poster" width="150">
+        <div class="movie-details">
+            <h3>They Cloned Tyrone</h3>
+            <p>Year: 2023</p>
+            <p>Genre: Comedy</p>
+            <p>Starring: John Boyega, Jamie Foxx</p>
+            <div class="rating" data-rating="0">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="movie-list-item" data-genre="comedy" data-year="2023">
+    <div class="movie-card">
+        <img src="murder-mystery-2.jpg" alt="Murder Mystery 2 Poster" width="150">
+        <div class="movie-details">
+            <h3>Murder Mystery 2</h3>
+            <p>Year: 2023</p>
+            <p>Genre: Comedy / Mystery</p>
+            <p>Starring: Adam Sandler, Jennifer Aniston</p>
+            <div class="rating" data-rating="0">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
+    </div>
+</li>
+
+
+            </ul>
+			
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 FilmFlow</p>
+    </footer>
+
+     <script>
+	 // Add this script to handle the home button click
+    const homeLink = document.getElementById('home-link');
+    
+    homeLink.addEventListener('click', () => {
+        // Reload the page when the home link is clicked
+        window.location.reload();
+    });
+	const nav = document.querySelector('nav');
+    const initialOffset = nav.offsetTop;
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset >= initialOffset) {
+            nav.style.position = 'fixed';
+            nav.style.top = '0';
+        } else {
+            nav.style.position = 'absolute';
+            nav.style.top = initialOffset + 'px';
+        }
+    });
+        const ratings = document.querySelectorAll('.rating');
+        const genreOptions = document.querySelectorAll('.genre-option');
+        const movieListItems = document.querySelectorAll('.movie-list-item');
+        const yearOptions = document.querySelectorAll('.year-option');
+
+        genreOptions.forEach(genreOption => {
+            genreOption.addEventListener('click', () => {
+                const selectedGenre = genreOption.getAttribute('data-genre');
+
+                movieListItems.forEach(movieListItem => {
+                    const movieGenre = movieListItem.getAttribute('data-genre');
+                    if (selectedGenre === 'all' || selectedGenre === movieGenre) {
+                        movieListItem.style.display = 'block';
+                    } else {
+                        movieListItem.style.display = 'none';
+                    }
+                });
+            });
+        });
+		 yearOptions.forEach(yearOption => {
+            yearOption.addEventListener('click', () => {
+                const selectedYear = yearOption.getAttribute('data-year');
+
+                movieListItems.forEach(movieListItem => {
+                    const movieYear = movieListItem.getAttribute('data-year');
+                    if (selectedYear === 'all' || selectedYear === movieYear) {
+                        movieListItem.style.display = 'block';
+                    } else {
+                        movieListItem.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        ratings.forEach(rating => {
+            rating.addEventListener('click', event => {
+                const stars = rating.querySelectorAll('span');
+                const ratingValue = Array.from(stars).indexOf(event.target) + 1;
+
+                // Update the data-rating attribute
+                rating.setAttribute('data-rating', ratingValue);
+
+                // Update the star colors based on the rating
+                stars.forEach((star, index) => {
+                    if (index < ratingValue) {
+                        star.style.color = '#ffcc00'; // Highlighted star
+                    } else {
+                        star.style.color = '#ff6600'; // Unhighlighted star
+                    }
+                });
+            });
+        });
+		
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* styles.css */
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #ff6600;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Update the CSS in your styles.css file */
+nav {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+    position: absolute; /* Set the initial position to absolute */
+    width: 100%;        /* Make it span the full width of the viewport */
+}
+
+/* Rest of your CSS code remains unchanged */
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #ff6600;
+}
+
+/* styles.css */
+
+/* ... Your existing CSS ... */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+li {
+    margin-bottom: 0;
+    display: flex;
+    align-items: stretch; /* Align items to stretch to the same height */
+}
+
+.movie-card {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1; /* Allow each card to take equal space within the flex container */
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #ff6600;
+}
+
+p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+
+.rating {
+    color: #ff6600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rating:hover,
+.rating:hover ~ .rating {
+    color: #ffcc00;
+}
+
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+}
